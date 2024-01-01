@@ -51,8 +51,10 @@
 		27BACBAE2B42C79500AB841B /* CoreData-CRUD */ = {
 			isa = PBXGroup;
 			children = (
-				27BACBAF2B42C79500AB841B /* CoreData_CRUDApp.swift */,
-				27BACBB12B42C79500AB841B /* ContentView.swift */,
+				27BACBC02B42C90700AB841B /* Views */,
+				27BACBBF2B42C90100AB841B /* Models */,
+				27BACBBE2B42C8F900AB841B /* Extensions */,
+				27BACBBD2B42C8F300AB841B /* Services */,
 				27BACBB32B42C79800AB841B /* Assets.xcassets */,
 				27BACBB52B42C79800AB841B /* Preview Content */,
 			);
@@ -65,6 +67,36 @@
 				27BACBB62B42C79800AB841B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		27BACBBD2B42C8F300AB841B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		27BACBBE2B42C8F900AB841B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27BACBBF2B42C90100AB841B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27BACBC02B42C90700AB841B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27BACBAF2B42C79500AB841B /* CoreData_CRUDApp.swift */,
+				27BACBB12B42C79500AB841B /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
