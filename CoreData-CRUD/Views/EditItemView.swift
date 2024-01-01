@@ -31,6 +31,7 @@ struct EditItemView: View {
                     itemName = item.name ?? ""
                 }
             }
+            .navigationBarTitle("Edit Item")
         }
     }
 }

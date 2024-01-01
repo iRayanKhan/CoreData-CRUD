@@ -29,6 +29,7 @@
 		27BACBC72B42C9A900AB841B /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		27BACBC92B42C9BB00AB841B /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		27BACBCD2B42C9FE00AB841B /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		27BACBCF2B42CD6800AB841B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 		27BACBAE2B42C79500AB841B /* CoreData-CRUD */ = {
 			isa = PBXGroup;
 			children = (
+				27BACBCF2B42CD6800AB841B /* Info.plist */,
 				27BACBC02B42C90700AB841B /* Views */,
 				27BACBBF2B42C90100AB841B /* Models */,
 				27BACBBE2B42C8F900AB841B /* Extensions */,
@@ -327,6 +329,7 @@
 				DEVELOPMENT_TEAM = 9489Q3YVAN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreData-CRUD/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -357,6 +360,7 @@
 				DEVELOPMENT_TEAM = 9489Q3YVAN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreData-CRUD/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
