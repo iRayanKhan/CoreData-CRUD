@@ -11,23 +11,27 @@ struct ItemView: View {
     @StateObject var viewModel: ItemsViewModel
     @State private var showingEditView = false
     @State private var editableItem: Item?
-
+    
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.items, id: \.self) { item in
-                    Text(item.name ?? "Untitled")
-                        .onTapGesture {
-                            self.editableItem = item
-                            self.showingEditView = true
+            VStack() {
+                List {
+                    ForEach(viewModel.items, id: \.self) { item in
+                        Text(item.name ?? "Untitled")
+                            .onTapGesture {
+                                self.editableItem = item
+                                self.showingEditView = true
+                            }
+                    }
+                    .onDelete { indexSet in
+                        indexSet.forEach { index in
+                            let item = viewModel.items[index]
+                            viewModel.deleteItem(item)
                         }
-                }
-                .onDelete { indexSet in
-                    indexSet.forEach { index in
-                        let item = viewModel.items[index]
-                        viewModel.deleteItem(item)
                     }
                 }
+                Text("^[\(viewModel.items.count) Items](inflect: true)")
+                    .padding()
             }
             .navigationBarTitle("Items")
             .navigationBarItems(trailing: Button(action: {
