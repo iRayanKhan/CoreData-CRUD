@@ -39,6 +39,6 @@ struct ItemView: View {
             .sheet(isPresented: $showingEditView) {
                 EditItemView(viewModel: viewModel, editableItem: $editableItem)
             }
-        }
+        }            .navigationViewStyle(StackNavigationViewStyle())
     }
 }
